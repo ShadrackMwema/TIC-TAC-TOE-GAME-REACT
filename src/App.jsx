@@ -1,14 +1,14 @@
-import { useState } from 'react'
 
-import './App.css'
+import React from 'react'
+import Square from './square'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
    
       <h1>Tic tac toe game</h1>
+      <Square/>
     </>
   )
 }
