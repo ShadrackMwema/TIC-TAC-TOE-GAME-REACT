@@ -1,25 +1,5 @@
-# Tic Tac Toe Game in React
-
-## Introduction
-
-Welcome to my Tic Tac Toe game built with React! This project is a personal endeavor to understand the fundamentals of React, including components, state management, and event handling.
-
-## Features
-
-- Classic Tic Tac Toe gameplay
-- Responsive design
-- Real-time updates using React state
-- Simple and intuitive user interface
-
 ## What I Learned
+To check for a winner in a tic-tac-toe game, the Board would need to somehow know the state of each of the 9 Square components.
+-The best approach is to store the game’s state in the parent Board component instead of in each Square. The Board component can tell each Square what to display by passing a prop, like you did when you passed a number to each Square.
 
-Through building this project, I learned:
-
-- How to create and manage React components
-- How to use React state and props effectively
-- How to handle user events in React
-- Basic CSS styling in a React application
-
-## License
-
-This project is open-source . You can contribute,fork and use it for free.
+To collect data from multiple children, or to have two child components communicate with each other,i declared the shared state in their parent component instead. The parent component can pass that state back down to the children via props. This keeps the child components in sync with each other and with their parent.

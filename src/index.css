@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #fff;
+  }
+  
+  .board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .board-row {
+    display: flex;
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #ffffff 0%, #e1e1e1 100%);
+    border: 2px solid #000;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    transition: background 0.3s;
+  }
+  
+  .square:hover {
+    background: linear-gradient(135deg, #e1e1e1 0%, #ffffff 100%);
+  }
+  

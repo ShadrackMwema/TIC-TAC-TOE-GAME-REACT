@@ -1,14 +1,13 @@
 
-import React from 'react'
-import Square from './square'
-
+import Board from './Board'
+import './index.css';
 function App() {
   
   return (
     <>
    
-      <h1>Tic tac toe game</h1>
-      <Square/>
+      <h1>Tic tac toe game 🥰</h1>
+      <Board/>
     </>
   )
 }
