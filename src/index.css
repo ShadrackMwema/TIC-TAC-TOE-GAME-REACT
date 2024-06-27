@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    background: linear-gradient(135deg, #7b04fc 0%, #2575fc 100%);
     font-family: Arial, sans-serif;
   }
   
@@ -38,10 +38,72 @@ body {
     align-items: center;
     justify-content: center;
     margin: 5px;
-    transition: background 0.3s;
+   
+    background: linear-gradient(135deg, #c1bdbd 0%, #ffffff 100%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px; /* Smooth edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow */
+  
+    
+
   }
   
   .square:hover {
-    background: linear-gradient(135deg, #e1e1e1 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #c1bdbd 100%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+    transform: scale(1.05) rotate(2deg); /* Slight scale and rotate */
+    border-radius: 20px; /* More pronounced smooth edges */
+  }
+
+  
+  
+  .status {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: linear-gradient(135deg, #2196F3, #21CBF3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: glow 1.5s infinite alternate;
   }
   
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px rgba(33, 203, 243, 0.7), 0 0 20px rgba(33, 203, 243, 0.7);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(33, 203, 243, 1), 0 0 40px rgba(33, 203, 243, 1);
+    }
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .game-info {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+ 
+  button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
